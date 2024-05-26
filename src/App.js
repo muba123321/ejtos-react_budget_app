@@ -14,6 +14,7 @@ import AllocationForm from './components/AllocationForm';
 
 
 import { AppProvider } from './context/AppContext';
+import CurrencySelector from './components/CurrencySelector';
 const App = () => {
     return (
         <AppProvider>
@@ -40,7 +41,14 @@ const App = () => {
                     <div className='col-sm'>
                     <ExpenseTotal />
                 </div>
-                        }        
+                        }    
+                        {
+                           
+                            <div className='col-sm'>
+                                <CurrencySelector />
+                            </div>
+                      
+                        }    
                        
                         {
                             /* Add ExpenseList component here */
